@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Impressum – Seelennoten</title>
+  <!-- Bewusst keine externen Schriften (z. B. Google Fonts), damit keine Besucherdaten an Dritte gehen. -->
+  <style>
+    :root {
+      --bg: #0a0503;
+      --gold-hell: #f0cd8e;
+      --gold: #e3b160;
+      --creme: #e8d8b8;
+      --text: #efe6d6;
+      --linie: rgba(227, 177, 96, 0.35);
+      --serif: "Playfair Display", Georgia, "Times New Roman", serif;
+      --sans: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; background: var(--bg); color: var(--text); }
+    body {
+      font-family: var(--sans);
+      font-size: 17px; line-height: 1.65;
+      background:
+        radial-gradient(ellipse 60% 40% at 15% 10%, rgba(227, 177, 96, 0.14), transparent 70%),
+        radial-gradient(ellipse 50% 40% at 90% 95%, rgba(122, 31, 43, 0.25), transparent 70%),
+        var(--bg);
+      min-height: 100vh;
+    }
+    main { max-width: 680px; margin: 0 auto; padding: 56px 20px 72px; }
+    header { text-align: center; margin-bottom: 40px; }
+    header img { width: 140px; height: 140px; border-radius: 50%; display: block; margin: 0 auto 18px; }
+    h1 { font-family: var(--serif); font-weight: 700; color: var(--gold-hell); font-size: 40px; margin: 0; letter-spacing: 0.01em; }
+    .claim { font-family: var(--serif); font-style: italic; color: var(--gold); margin-top: 4px; }
+    section { border-top: 1px solid var(--linie); padding: 22px 0; }
+    h2 { font-family: var(--serif); font-weight: 600; color: var(--gold); font-size: 21px; margin: 0 0 8px; }
+    p { margin: 0 0 8px; }
+    a { color: var(--gold-hell); }
+    form { margin-top: 14px; display: flex; flex-direction: column; gap: 14px; }
+    label { font-size: 15px; color: var(--creme); display: block; margin-bottom: 4px; }
+    input, textarea {
+      width: 100%; font: inherit; color: var(--text);
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--linie); border-radius: 10px; padding: 11px 13px;
+    }
+    input:focus, textarea:focus { outline: 2px solid var(--gold); outline-offset: 1px; }
+    textarea { min-height: 140px; resize: vertical; }
+    .honig { position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden; }
+    button {
+      align-self: flex-start; font: inherit; font-weight: 600; cursor: pointer;
+      color: #0a0503; background: var(--gold); border: 0; border-radius: 999px; padding: 12px 26px;
+    }
+    button:hover { background: var(--gold-hell); }
+    .hinweis { font-size: 14px; color: var(--creme); }
+    footer { border-top: 1px solid var(--linie); padding-top: 22px; font-size: 14px; color: var(--creme); text-align: center; }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <img src="seelennoten-logo.jpg" alt="Seelennoten-Logo: goldenes Herz mit Herzschlaglinie und Note">
+      <h1>Impressum</h1>
+      <div class="claim">Seelennoten – Eure Geschichte wird zum Lied.</div>
+    </header>
+
+    <section>
+      <h2>Angaben zum Anbieter</h2>
+      <p>Seelennoten<br>
+        Inhaber: Gregor Maslak<br>
+        c/o POSTFLEX PFX-590-459<br>
+        Emsdettener Straße 10<br>
+        48268 Greven<br>
+        Deutschland</p>
+      <p>Bitte keine Pakete oder Päckchen an diese Anschrift senden.</p>
+    </section>
+
+    <section id="kontakt">
+      <h2>Kontakt</h2>
+      <p>E-Mail: <a href="mailto:seelennoten@posteo.de">seelennoten@posteo.de</a><br>
+        oder direkt über das Kontaktformular:</p>
+      <form action="https://form.taxi/s/yfghxovf" method="POST" accept-charset="UTF-8">
+        <div>
+          <label for="name">Name</label>
+          <input id="name" name="Name" type="text" autocomplete="name" required>
+        </div>
+        <div>
+          <label for="email">E-Mail</label>
+          <input id="email" name="E-Mail" type="email" autocomplete="email" required>
+        </div>
+        <div>
+          <label for="nachricht">Nachricht</label>
+          <textarea id="nachricht" name="Nachricht" required></textarea>
+        </div>
+        <!-- Honeypot gegen Spam: für Menschen unsichtbar, Bots füllen es aus. -->
+        <div class="honig" aria-hidden="true">
+          <label for="gotcha">Bitte leer lassen</label>
+          <input id="gotcha" type="text" name="_gotcha" tabindex="-1" autocomplete="off">
+        </div>
+        <p class="hinweis">Deine Angaben werden nur zur Beantwortung deiner Anfrage verwendet. Mehr dazu unter <a href="#datenschutz">Datenschutz</a>.</p>
+        <button type="submit">Nachricht senden</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Verantwortlich für die Inhalte</h2>
+      <p>Verantwortlich für die Inhalte der Seelennoten-Profile auf Instagram (@dein.klangseele) und Pinterest (@seelennoten): Gregor Maslak, Anschrift wie oben.</p>
+    </section>
+
+    <!-- Stand 28.09.2026 laut Impressum der Plattform (launch.songgeschenke.com/impressum). -->
+    <section>
+      <h2>Bestellung und Abwicklung</h2>
+      <p>Seelennoten ist Vertriebspartner (Reseller) der Plattform SongGeschenke. Die Songs werden auf <a href="https://seelennoten.songgeschenke.net">seelennoten.songgeschenke.net</a> erstellt.</p>
+      <p>Vertragspartner für Zahlung und rechtliche Abwicklung ist die Digistore24 GmbH, St.-Godehard-Straße 32, 31139 Hildesheim, Deutschland. Betreiberin der Plattform ist die Convert Marketing LLC, St. Petersburg (Florida), USA. Weitere Angaben im <a href="https://launch.songgeschenke.com/impressum">Impressum der Plattform</a>.</p>
+    </section>
+
+    <section id="datenschutz">
+      <h2>Datenschutz</h2>
+      <p><strong>Verantwortlicher:</strong> Gregor Maslak, Anschrift und E-Mail wie oben.</p>
+      <p><strong>Aufruf dieser Seite:</strong> Diese Seite setzt keine Cookies, nutzt keine Analyse- oder Tracking-Dienste und lädt keine externen Schriften. Gehostet wird sie bei GitHub Pages (GitHub, Inc., USA). Beim Aufruf verarbeitet GitHub technisch notwendige Zugriffsdaten wie die IP-Adresse, um die Seite auszuliefern und abzusichern.</p>
+      <p><strong>Kontaktformular:</strong> Nachrichten aus dem Formular werden über den Dienst form.taxi (wrkt*biz Reinhard Söllradl, Eferding, Österreich) entgegengenommen und per E-Mail an Seelennoten weitergeleitet; der E-Mail-Versand erfolgt über die Mailjet GmbH. Die Daten werden laut form.taxi innerhalb der EU verarbeitet. Verwendet werden Name, E-Mail-Adresse und Nachricht ausschließlich zur Bearbeitung deiner Anfrage (Art. 6 Abs. 1 lit. b bzw. lit. f DSGVO). Sie werden gelöscht, wenn sie dafür nicht mehr benötigt werden und keine Aufbewahrungspflichten bestehen.</p>
+      <p><strong>Deine Rechte:</strong> Du hast das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch sowie das Recht, dich bei einer Datenschutz-Aufsichtsbehörde zu beschweren.</p>
+    </section>
+
+    <footer>
+      © Seelennoten · <a href="https://seelennoten.songgeschenke.net">seelennoten.songgeschenke.net</a>
+    </footer>
+  </main>
+</body>
+</html>
